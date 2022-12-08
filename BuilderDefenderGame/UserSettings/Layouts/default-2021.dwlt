@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 481
     height: 320
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 65
+  controlID: 66
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 84
+  controlID: 51
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 85
+  controlID: 52
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,7 +317,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures
+    - Assets/Prefabs/Resource Nodes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 89}
     m_SelectedIDs: 766f0000
     m_LastClickedID: 28534
-    m_ExpandedIDs: 000000008a6f00008c6f00008e6f0000906f0000926f0000946f0000966f0000
+    m_ExpandedIDs: 00000000a06f0000a26f0000a46f0000a66f0000a86f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -357,10 +357,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 515}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008a6f00008e6f0000906f0000926f0000946f0000966f000048700000
+    m_ExpandedIDs: ffffffff00000000a06f0000a26f0000a46f0000a66f0000a86f0000e86f0000ec6f0000788900006691000056ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fa6f0000
+      m_SelectedIDs: 48750000
       m_LastClickedID: 0
-      m_ExpandedIDs: 0efbffff366d0000986d00009e6d0000
+      m_ExpandedIDs: a280ffff16f9ffff0efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -794,9 +794,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -18.94648, y: 19.115622, z: 97.557884}
+    m_Target: {x: -16.897573, y: 12.053176, z: 71.8116}
     speed: 2
-    m_Value: {x: -18.94648, y: 19.115622, z: 97.557884}
+    m_Value: {x: -16.897573, y: 12.053176, z: 71.8116}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -847,9 +847,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 163.41707
+    m_Target: 14.598011
     speed: 2
-    m_Value: 163.41707
+    m_Value: 14.598011
   m_Ortho:
     m_Target: 1
     speed: 2
