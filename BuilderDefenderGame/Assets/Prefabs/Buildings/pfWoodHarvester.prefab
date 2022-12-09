@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3267287927221956207}
   - component: {fileID: -4686797466271976903}
   - component: {fileID: -2254808765384792055}
+  - component: {fileID: 780926730273877823}
   m_Layer: 0
   m_Name: pfWoodHarvester
   m_TagString: Untagged
@@ -143,3 +144,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingType: {fileID: 11400000, guid: 46f09a78b35acf640b31f037c183345f, type: 2}
+--- !u!61 &780926730273877823
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257052290306693861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.055325747, y: -0.3003403}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.0425553, y: 4.256322}
+  m_EdgeRadius: 0

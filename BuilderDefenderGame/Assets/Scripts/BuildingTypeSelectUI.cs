@@ -7,6 +7,7 @@ public class BuildingTypeSelectUI : MonoBehaviour
 {
 
     [SerializeField] private Sprite arrowSprite;
+    [SerializeField] private List<BuildingTypeSO> ignoredBuildingTypes;
 
     private Dictionary<BuildingTypeSO, Transform> buttonTransformDictionary;
     private Transform arrowButton;
@@ -40,6 +41,8 @@ public class BuildingTypeSelectUI : MonoBehaviour
 
         foreach (BuildingTypeSO buildingType in buildingTypeList.list)
         {
+            if (ignoredBuildingTypes.Contains(buildingType)) continue;
+
             Transform buttonTransform = Instantiate(buttonTemplate, transform);
             buttonTransform.gameObject.SetActive(true);
 
