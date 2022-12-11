@@ -5,10 +5,30 @@ using UnityEngine;
 public class ResourceGenerator : MonoBehaviour
 {
 
+    public static int GetNearbyResourceAmount(ResourceGeneratorData resourceGeneratorData, Vector3 position)
+    {
+        int nearbyResourceAmount = 0;
+        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(position, resourceGeneratorData.resourceDetectionRadius);
+
+        foreach (Collider2D collider in collider2DArray)
+        {
+            ResourceNode resourceNode = collider.GetComponent<ResourceNode>();
+            if (resourceNode != null)
+            {
+                if (resourceNode.resourceType == resourceGeneratorData.resourceType)
+                {
+                    nearbyResourceAmount++;
+                }
+            }
+        }
+
+        nearbyResourceAmount = Mathf.Clamp(nearbyResourceAmount, 0, resourceGeneratorData.maxResourceAmount);
+        return nearbyResourceAmount;
+    }
+
     private ResourceGeneratorData resourceGeneratorData;
     private float timer;
     private float timerMax;
-    private int nearbyResourceAmount = 0;
 
     private void Awake()
     {
@@ -18,23 +38,7 @@ public class ResourceGenerator : MonoBehaviour
 
     private void Start()
     {
-        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(transform.position, resourceGeneratorData.resourceDetectionRadius);
-
-        foreach(Collider2D collider in collider2DArray)
-        {
-            ResourceNode resourceNode = collider.GetComponent<ResourceNode>();
-            if(resourceNode != null)
-            {
-                if(resourceNode.resourceType == resourceGeneratorData.resourceType)
-                {
-                    nearbyResourceAmount++;
-                }
-            }
-        }
-
-        nearbyResourceAmount = Mathf.Clamp(nearbyResourceAmount, 0, resourceGeneratorData.maxResourceAmount);
-
-        if(nearbyResourceAmount == 0)
+        if(GetNearbyResourceAmount(resourceGeneratorData, transform.position) == 0)
         {
             enabled = false;
         }
@@ -46,8 +50,13 @@ public class ResourceGenerator : MonoBehaviour
         if(timer <= 0f)
         {
             timer += timerMax;
-            ResourceManager.Instance.AddResource(resourceGeneratorData.resourceType, nearbyResourceAmount);
+            ResourceManager.Instance.AddResource(resourceGeneratorData.resourceType, GetNearbyResourceAmount(resourceGeneratorData, transform.position));
         }
+    }
+
+    public float GetTimerNormalized()
+    {
+        return timer / timerMax;
     }
 
 }
