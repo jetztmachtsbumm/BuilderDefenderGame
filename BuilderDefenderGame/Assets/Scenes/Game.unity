@@ -3507,6 +3507,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d7a288634184e4193fbe19b02aae22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingResourceAmountList:
+  - resourceType: {fileID: 11400000, guid: 5b209597bee08634fa8fc45edc7eac62, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: e503f5f399d29c94d9c58ee62b52b381, type: 2}
+    amount: 50
+  - resourceType: {fileID: 11400000, guid: b8943ec9725bfd242a252a636e53fab5, type: 2}
+    amount: 10
 --- !u!4 &1557702344
 Transform:
   m_ObjectHideFlags: 0

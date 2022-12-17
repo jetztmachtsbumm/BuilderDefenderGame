@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 780926730273877823}
   - component: {fileID: 2815431127577996419}
   - component: {fileID: -3427845177755845407}
+  - component: {fileID: 7347492698713592703}
   m_Layer: 0
   m_Name: pfHQ
   m_TagString: Untagged
@@ -36,6 +37,7 @@ Transform:
   - {fileID: 1827509740686115619}
   - {fileID: 1827480149239673000}
   - {fileID: 3215628371932218274}
+  - {fileID: 7383388694476821820}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bfac0cb49f5b447bf08a0d8a78bcc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingType: {fileID: 11400000, guid: 46f09a78b35acf640b31f037c183345f, type: 2}
+  buildingType: {fileID: 11400000, guid: cfe1bf2e0597a484b9c8568393511aeb, type: 2}
 --- !u!61 &780926730273877823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115,6 +117,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0133d08e420d02e439b040c648e745db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7347492698713592703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257052290306693861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f39cd0440676bf41b4e17a108bb62b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootTimerMax: 0.2
+--- !u!1 &6344839686087557916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7383388694476821820}
+  m_Layer: 0
+  m_Name: ProjectileSpawnPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7383388694476821820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344839686087557916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3267287927221956207}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1236884347615436682
 PrefabInstance:
   m_ObjectHideFlags: 0
