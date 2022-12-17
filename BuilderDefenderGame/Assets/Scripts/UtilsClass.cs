@@ -14,4 +14,8 @@ public static class UtilsClass
         return mainCamera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
     }
 
+    public static Vector3 GetRandomDir()
+    {
+        return new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+    }
 }
