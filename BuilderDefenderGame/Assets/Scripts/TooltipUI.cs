@@ -8,7 +8,7 @@ public class TooltipUI : MonoBehaviour
 
     public static TooltipUI Instance { get; private set; }
 
-    [SerializeField] private RectTransform canvasRecTransform;
+    [SerializeField] private RectTransform canvasRectTransform;
 
     private RectTransform rectTransform;
     private TextMeshProUGUI textMeshPro;
@@ -42,15 +42,15 @@ public class TooltipUI : MonoBehaviour
 
     private void HandleFollowMouse()
     {
-        Vector2 anchoredPosition = Input.mousePosition / canvasRecTransform.localScale.x;
+        Vector2 anchoredPosition = Input.mousePosition / canvasRectTransform.localScale.x;
 
-        if (anchoredPosition.x + backgroundRectTransform.rect.width > canvasRecTransform.rect.width)
+        if (anchoredPosition.x + backgroundRectTransform.rect.width > canvasRectTransform.rect.width)
         {
-            anchoredPosition.x = canvasRecTransform.rect.width - backgroundRectTransform.rect.width;
+            anchoredPosition.x = canvasRectTransform.rect.width - backgroundRectTransform.rect.width;
         }
-        if (anchoredPosition.y + backgroundRectTransform.rect.height > canvasRecTransform.rect.height)
+        if (anchoredPosition.y + backgroundRectTransform.rect.height > canvasRectTransform.rect.height)
         {
-            anchoredPosition.y = canvasRecTransform.rect.height - backgroundRectTransform.rect.height;
+            anchoredPosition.y = canvasRectTransform.rect.height - backgroundRectTransform.rect.height;
         }
 
         rectTransform.anchoredPosition = anchoredPosition;
